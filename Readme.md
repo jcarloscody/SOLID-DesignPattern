@@ -30,4 +30,20 @@
 - uma classe deveria ter apenas um único motivo para mudar. - Robert Martin
 
 
-## `O -> `
+## `O -> Open Closed Principle, princípio aberto fechado`
+- você nao precisa fazer uma cirurgia para pôr um casaco
+- entidades de softwares devem estar abertas para extensão, porém fechadas para modificações. - Bertrand Meyer
+
+
+## `L -> Liskov Substitution Principle,  princípio da substituição de liskov`
+- se q(X) é uma propriedade demonstrável dos objetos x de tipo T, então q(y)deve ser verdadeiro para objetos y de tipo S, onde  S é um subtipo de T. Barbara Liskov
+-  Usar composição para   evitar a herança sem duplicação de código.
+
+## `D -> Dependency Inversion Principle, princípio da inversão de dependência`
+- Abstrações não devem depender de implementações. Implementações devem depender de abstrações. Robert Martin
+- Quando implementamos o princípio O, acabamos implementando os princípios O, D, S
+- Se um método muda a forma como realiza sua tarefa, desde que a interface se mantenha, não vamos precisar nos preocupar nem em editar o nosso código.
+
+## `I -> Interface Segregation Principle, segregação de interface`
+- ás vezes somos obrigados a implementar uma interface que não faz sentido. a solução é segregar em outras interfaces os métodos mais específicos.
+- Uma classe não deve ser obrigada a implementar um método de determinada interface, se ele não será útil. Para isso, uma interface deverá ser extraída apenas com os métodos necessários.
